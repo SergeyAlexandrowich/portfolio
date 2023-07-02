@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     width:100%;
     height: 80vh;
-    background-image:url(../images/background5.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center ;
@@ -113,13 +113,14 @@ body{
     margin: 0 auto;
     padding: 0;
     display: flex;
-    width: 50%; 
+    width: 30%; 
  }
 
 
  .main{
 	width: 100%;
-	background-color: black;
+	background:black;
+    margin-bottom: 50px;
 }
 
 .main__text{
