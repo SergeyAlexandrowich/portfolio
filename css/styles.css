@@ -150,7 +150,8 @@ body{
     display: flex;
     height: 250px;
     width: 500px;
-    object-fit: cover; 
+    object-fit: cover;
+    transition: transform .5s ease; 
  }
 
  .main__works-photo:hover{
