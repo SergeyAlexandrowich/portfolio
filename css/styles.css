@@ -1,3 +1,8 @@
+
+
+
+
+
 body{
     margin:0 auto;
     background-color: black;
@@ -131,7 +136,8 @@ body{
 	align-items:center;
 	flex-wrap: wrap;
 	justify-content: center;
-    background: yellow;   
+
+
 }
 
 .main__works-div{
@@ -140,8 +146,10 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: green;
-    overflow: hidden;	
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: red;	
+    max-width: 650px;
 }
 
 .main__works-photo{
@@ -151,12 +159,13 @@ body{
     height: 250px;
     width: 500px;
     object-fit: cover;
-    transition: transform .5s ease; 
+    transition: transform .2s ease; 
  }
 
  .main__works-photo:hover{
-    transform: scale(1.1);
+    transform: translate(10px,20px);
  }
+ 
 
  .main__works-subtitle{
     margin: 0 auto;
@@ -164,6 +173,7 @@ body{
     color: aliceblue;
     font-size: 25px;
     margin-top: 20px;
+    font-family: SimSun;
  }
 
  .main__works-subtitle-span{
@@ -173,16 +183,31 @@ body{
     color: var(--color-text-ghost);
     font-weight: 400;
     margin-left: 5px;
+    font-family: MV Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+ }
+
+ .main__works-title{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    margin-left: 5px;
+    
  }
 
  .main__works-link{
-    color: var(--color-text-secondary);
+    color: white;
     display: flex;
     font-weight: 500;
     margin: 0;
     outline: none;
     text-decoration: none;
     transition: color .3s ease;
+    margin-left: 5px;
+    font-family: Lucida Handwriting;
+
 }
 
 .contact-me{
@@ -210,7 +235,21 @@ body{
     margin: 10px 0;
     padding: 20px 0;
     width: 50%;
+    height: 30px;
 }
+
+.contact-me__text{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 20px 0;
+    width: 70%;
+    height: 60px;
+}
+
+
 
 .contact-me__button{
     margin: 0 auto;
