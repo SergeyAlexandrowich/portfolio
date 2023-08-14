@@ -1,0 +1,7 @@
+.header__content{
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 296px);
+    align-items: center;
+    overflow:hidden ;
+}
