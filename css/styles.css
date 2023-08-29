@@ -1,116 +1,23 @@
-body{
-    margin:0 auto;
-    background-color: black;
-}
 
-.header{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    width:100%;
-}
 
-.header__links{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 15px 0;  
-}
 
-.header__logo{
-    margin: 0 auto;
-    padding: 0;
-    width: 5%;   
-}
 
-.header__links-list{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width:40%;
-    justify-content: space-around;
-}
 
-.header__link{
-    margin: 0 auto;
-    padding: 0;
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-}
 
-.header__social-media{
-    margin: 0 auto;
-    padding: 0;
-    width: 10%;
-    display:flex ;
-    align-items: center;
-    justify-content: space-around;
-}
 
-.header__social-logo{
-    margin: 0 auto;
-    padding: 0;
-    width: 40px;
-}
 
-.header__social-facebook{
-    margin: 0 auto;
-    padding: 0;
-    width: 15px;
-}
 
-.main__article{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 30px 0;
-    overflow:hidden ;
-}
 
-.main__article-text{
-    margin: 0 auto;
-    padding: 0;
-    width: 30%;
-}
 
-.header__title-subtitle{
-    margin: 0 auto;
-    padding: 0;
-    color: white;
-    margin-bottom: 30px;
-    font-size: 70px;
-}
 
-.button{
-    margin: 0;
-    padding: 0;
-    padding: 10px 30px;
-    color: white;
-    background-color: black;
-    border: 1px solid white;
-}
 
-.header__photo{
-    margin: 0 auto;
-    padding: 0;
-    display: flex;
-    width: 30%; 
- }
+
 
  .main{
-    margin: 0 auto;
-    padding: 0;
 	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__text{
@@ -123,66 +30,81 @@ body{
 }
 
 .main__works{
-    margin: 0 auto;
-    padding: 0;
-	width: 100%;
+	width: 80%;
 	padding:50px 0;
 	display: flex;
-	align-items:center;
 	flex-wrap: wrap;
-	justify-content: center;
-    background: yellow;   
+	justify-content: space-between;
 }
 
 .main__works-div{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: green;
     overflow: hidden;	
+    width: calc(50% - 50px) ;
+    padding: 0 0 150px;
+}
+
+.main__works-div:nth-child(2n){
+    margin: 150px 0 0;
+    padding: 0;
+
+}
+
+.main__works-link{
+    overflow: hidden;
 }
 
 .main__works-photo{
-    margin: 0 auto;
-    padding: 0;
     display: flex;
-    height: 250px;
-    width: 500px;
+    width: 100%;
     object-fit: cover;
-    transition: transform .5s ease; 
+    transition: transform .6s ease; 
  }
 
  .main__works-photo:hover{
     transform: scale(1.1);
  }
-
+ 
  .main__works-subtitle{
     margin: 0 auto;
     padding: 0;
     color: aliceblue;
     font-size: 25px;
     margin-top: 20px;
+    font-family: SimSun;
  }
 
  .main__works-subtitle-span{
-    margin: 0 auto;
-    padding: 0;
     font-size: 16px;
     color: var(--color-text-ghost);
     font-weight: 400;
     margin-left: 5px;
+    font-family: MV Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  }
 
- .main__works-link{
-    color: var(--color-text-secondary);
+ .main__works-title{
+    margin: 0 ;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 400;
+    padding: 10px 40px;
+ }
+
+ .main__repositoriy-link{
+    color: white;
     display: flex;
     font-weight: 500;
     margin: 0;
     outline: none;
     text-decoration: none;
     transition: color .3s ease;
+    padding-left: 40px;
+    font-family: Lucida Handwriting;
 }
 
 .contact-me{
@@ -210,6 +132,18 @@ body{
     margin: 10px 0;
     padding: 20px 0;
     width: 50%;
+    height: 30px;
+}
+
+.contact-me__text{
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 20px 0;
+    width: 70%;
+    height: 60px;
 }
 
 .contact-me__button{
